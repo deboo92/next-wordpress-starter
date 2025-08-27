@@ -1,3 +1,27 @@
+# SmartDevBox Web
+
+A clean, modern coding assistant UI inspired by Blackbox Agent.
+
+## Run locally
+
+```bash
+npm i # or pnpm i / yarn
+npm run dev # or pnpm dev / yarn dev
+```
+
+Open http://localhost:3000
+
+The UI will call `http://localhost:11434/api/generate` with `{ "prompt": "..." }` and stream the response. If not available, it shows a placeholder response.
+
+## Firebase Hosting
+
+This project includes `firebase.json` and `.firebaserc`. Build and deploy:
+
+```bash
+npm run build
+# then use Firebase CLI to deploy (requires setup)
+# firebase deploy --only hosting
+```
 # Next.js WordPress Starter
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
